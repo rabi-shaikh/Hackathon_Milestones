@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Sherable Resume Builder
+    </title>
+    <Link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sherable Resume Builder</h1>
+    <form id="resume-form">
+     <fieldset> 
+       <legend>Persnol Information</legend>
+
+       <label for="Username">Username:</label>
+       <input type="text" id="Username" placeholder="Enter Your UserName" required >
+
+
+       <label for="name">Name:</label>
+       <input type="text" id="name" placeholder="Enter Your Name" required >
+
+       <label for="email">Email:</label>
+       <input type="email" id="email" placeholder="Enter Your Email" required >
+
+       <label for="Phone">Phone Number:</label>
+       <input type="tel" id="phone" placeholder="Enter Your Phone Number" required >
+     </fieldset>
+     <fieldset>
+        <legend>Educatoin</legend>
+        <label for education>Educatoin:</label>
+        <textarea id="education" placeholder="Enter Your Educatoin" rows="4" required></textarea>
+     </fieldset>
+     <fieldset>
+        <legend>Work Experience</legend>
+        <label for experience> Experience:</label>
+        <textarea id="experience" placeholder="Enter Your Experience" rows="4" required></textarea>
+     </fieldset>
+     <fieldset>
+        <legend>Skills</legend>
+        <label for skills>Skills:</label>
+        <textarea id="skills" placeholder="Enter Your Skills" rows="4" required></textarea>
+     </fieldset> 
+     <button type="submit"><b>Generate Resume</b></button>
+    </form>
+    <br>
+    <!--Dynamic and Editable Resume-->
+    <div id="resume-display" contenteditable="true">
+
+    </div>
+    <br>
+    <!--Sectoin for the sherable link and download option-->
+    <div id="sherable-link-container" >
+        <h2>Sherable Link</h2>
+        <p> Here is Your unique Link to View or edit your resume:</p>
+        <a href="#" id="sherable-link" target="_blank">sherable-link </a>
+        <br>
+        <button id="download-pdf">Download as PDF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
